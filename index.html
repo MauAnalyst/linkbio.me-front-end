@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>linqbio - início</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_arrow_downandcheck"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check"
+    /> -->
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <h1><a href="/">LINQBIO</a></h1>
+        <nav>
+          <ul>
+            <li><a href="#exemples">Exemplos</a></li>
+            <li><a href="#howWorks">Como Funciona</a></li>
+            <li><a href="#pricing">Preços</a></li>
+            <li><a href="">Help</a></li>
+          </ul>
+          <a class="sign">Entrar ou Criar Conta</a>
+        </nav>
+      </div>
+    </header>
+    <section class="section-intro">
+      <div class="intro">
+        <div class="intro-text">
+          <div>
+            <h1>LINQBIO</h1>
+            <p>
+              Todas as suas redes sociais centralizadas em uma page
+              personalizada do seu jeito
+            </p>
+          </div>
+          <a href="#exemples"
+            >Veja exemplos
+            <span class="material-symbols-outlined">
+              keyboard_arrow_down
+            </span></a
+          >
+        </div>
+        <img src="./imgs/socialMedia.png" alt="Social Media desenho" />
+      </div>
+      <form class="user-link">
+        <label for="userNameLink"><p>Adicione seu nome de usuário</p></label>
+        <div class="form-link">
+          <div class="user-link-input">
+            <label for="userNameLink">linqbio.me/</label>
+            <input
+              type="text"
+              placeholder="sr-maur"
+              id="userNameLink"
+              name="userNameLink"
+            />
+          </div>
+          <button type="submit" class="submit">Criar Conta</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="section-exemples">
+      <h2>Exemplos de aquisições do Linqbio</h2>
+      <div id="exemples">
+        <div class="group-exemple">
+          <a href="">linqbio.me/exemple</a>
+          <img src="https://picsum.photos/250/400" alt="" />
+        </div>
+        <div class="group-exemple">
+          <a href="">linqbio.me/exemple</a>
+          <img src="https://picsum.photos/250/400" alt="" />
+        </div>
+        <div class="group-exemple">
+          <a href="">linqbio.me/exemple</a>
+          <img src="https://picsum.photos/250/400" alt="" />
+        </div>
+        <!-- <div class="group-exemple">
+          <a href="">linqbio.me/exemple</a>
+          <img src="https://picsum.photos/250/400" alt="" />
+        </div> -->
+      </div>
+    </section>
+    <section class="section-howWorks">
+      <h2>Veja como funciona o Linqbio</h2>
+      <div id="howWorks">
+        <div class="howWork-group">
+          <img src="./imgs/fillingSurvey.png" alt="formulario desenho" />
+          <p>1. Crie uma conta e personalize sua page do seu jeito</p>
+        </div>
+        <div class="howWork-group">
+          <img src="./imgs/payment.png" alt="pagamento com cartão" />
+          <p>2. Escolha seu plano e realize o pagamento</p>
+        </div>
+        <div class="howWork-group">
+          <img src="./imgs/analyzeData.png" alt="analise de dados" />
+          <p>3. Monitore o fluxo de usuários na sua page</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pricing">
+      <h2>Planos e Preços</h2>
+      <div id="pricing">
+        <div class="pricing-group">
+          <h3>BASIC</h3>
+          <span class="pricing-value">19,99</span>
+          <p>
+            <span class="material-symbols-outlined">check</span>
+            Acesso por 1 ano
+          </p>
+          <p>
+            <span class="material-symbols-outlined">check</span>
+            Personalização limitada
+          </p>
+          <button>Obter Basic</button>
+        </div>
+        <div class="pricing-group">
+          <h3>PREMIUM</h3>
+          <span class="pricing-value">29,99</span>
+          <p>
+            <span class="material-symbols-outlined">check</span>
+            Acesso por 2 anos
+          </p>
+          <p>
+            <span class="material-symbols-outlined">check</span>
+            Personalização do seu jeito
+          </p>
+          <button>Obter Premium</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
