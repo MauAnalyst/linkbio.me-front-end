@@ -387,6 +387,18 @@ section h2{
  }
 
 
+/* ------  footer  ------ */
+
+footer {
+  margin: 1rem auto;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
 /* ------  responsividade  ------ */
 
 @media all and (max-width: 870px) {
