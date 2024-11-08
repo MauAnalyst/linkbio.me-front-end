@@ -50,7 +50,7 @@ body {
 
 header {
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   top 0;
   left: 0;
   right: 0;
@@ -63,7 +63,7 @@ header {
   justify-content: space-around ;
   padding: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  background: rgba(255, 255, 255 , 0.8);
+  background: rgba(255, 255, 255 , 0.9);
   backdrop-filter: saturate(150%) blur(3px);
 }
 
@@ -92,21 +92,78 @@ header {
   background-color: var(--color-action-primary-hover);
 }
 
-.navbar nav ul{
+.navbar nav #menu{
   display: flex;
   gap: 1rem;
 } 
 
-.navbar nav ul li {
+.navbar nav #menu li {
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-.navbar nav ul li:hover {
+.navbar nav #menu li:hover {
   color: var(--color-text-secondary)
 }
 
+/*  menu responsivo */
 
+#menu-resp {
+  display:none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* #menu-resp #icon {
+  position: relative;
+} */
+
+#items-menu-resp{
+  display: none;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+  background: rgba(255, 255, 255 , 0.9);
+  backdrop-filter: saturate(150%) blur(3px);
+  padding: 1rem 0;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  z-index: 3;
+
+  /* Configuração da animação */
+  animation: slideUp 0.5s ease forwards;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+
+@keyframes slideUp {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#items-menu-resp ul li {
+  margin: 3rem 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#background-menu-resp {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0 , 0.3);
+  z-index: 2;
+}
 
 /* ----- seção de introdução -----  */
 
@@ -412,8 +469,11 @@ footer p {
   /* body {
     width: 99%;
   } */
-  .navbar nav ul{
+  .navbar nav #menu{
     display: none;
+  }
+  .navbar nav #menu-resp {
+    display: block;
   }
   .intro-text {
     gap: 0.5rem;
