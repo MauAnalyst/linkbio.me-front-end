@@ -131,7 +131,7 @@ header {
   z-index: 3;
 
   /* Configuração da animação */
-  animation: slideUp 0.5s ease forwards;
+  animation: slideUp 0.3s ease forwards;
   transform: translateY(-100%);
   opacity: 0;
 }
