@@ -1,6 +1,7 @@
 //---- menu responsivo
 const menu = document.querySelector("#menu-resp #icon");
 const menuItens = document.querySelector("#items-menu-resp");
+const menuItem = document.querySelector("#items-menu-resp ul li");
 const backgroundMenu = document.querySelector("#background-menu-resp");
 const mediaQuery = window.matchMedia("(max-width: 700px)");
 
@@ -14,6 +15,18 @@ menu.addEventListener("click", () => {
     menuItens.style.display = "none";
     backgroundMenu.style.display = "none";
   }
+});
+
+backgroundMenu.addEventListener("click", () => {
+  menu.textContent = "menu";
+  menuItens.style.display = "none";
+  backgroundMenu.style.display = "none";
+});
+
+menuItem.addEventListener("click", () => {
+  menu.textContent = "menu";
+  menuItens.style.display = "none";
+  backgroundMenu.style.display = "none";
 });
 
 function handleScreenChange(e) {
