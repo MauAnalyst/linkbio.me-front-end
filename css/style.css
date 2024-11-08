@@ -379,6 +379,9 @@ section h2{
   .navbar nav ul{
     display: none;
   }
+  .intro-text {
+    gap: 0.5rem;
+  }
   #exemples {
     grid-template-columns: repeat(1, 1fr);
   }
