@@ -23,6 +23,7 @@
   padding: 0;
   font-family: "Inter", sans-serif;
   box-sizing: 0;
+  outline: none;
 }
 
 html {
@@ -37,6 +38,13 @@ a {
 
 ul {
   list-style: none;
+}
+
+.no-select {
+  user-select: none; /* Para navegadores modernos */
+  -webkit-user-select: none; /* Para navegadores baseados em WebKit (ex. Safari, Chrome) */
+  -moz-user-select: none; /* Para Firefox */
+  -ms-user-select: none; /* Para versões antigas do IE */
 }
 
 body {
